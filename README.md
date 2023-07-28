@@ -9,7 +9,7 @@
 - smp-finetune-jp-gpt-neox-sharded-data-parallel.ipynb
   - 日本語 GPT Neox (Rinna 3.6B) の Fine Tuning
 - smp-instruct-jp-gpt-neox-sharded-data-parallel.ipynb
-  - 日本語 GPT Neox (Rinna 3.6B) の Pretraining の Instruction Tuning
+  - 日本語 GPT Neox (Rinna 3.6B) の Instruction Tuning
 - smp-train-gpt-neox-sharded-data-parallel.ipynb
   - GPT NeoX の Pretraining（元のノートブックを少し改変したもの）
 - convert-hf.ipynb
