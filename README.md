@@ -1,6 +1,6 @@
 # SageMaker での日本語 LLM の分散学習
 
-こちらのサンプルコードは [SageMaker の分散学習での GPT NeoX の Pretraining のサンプル](https://github.com/aws/amazon-sagemaker-examples/tree/main/training/distributed_training/pytorch/model_parallel/gpt-neox) を元に、日本語で Pretraining、Fine-Tuning、Instruction-Tuning が行えるように変更したサンプルコードです。
+こちらのサンプルコードは [SageMaker Model Parallel Library](https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel.html) を使用して SageMaker 上で日本語大規模言語モデルの Pretraining、Fine-Tuning、Instruction-Tuning が行うサンプルコードです。
 
 ## Notebooks
 
@@ -18,10 +18,15 @@
 
 ## 元サンプルコードからの変更点
 
-- ノートブックの追加
+このサンプルノートブックは [SageMaker の分散学習での GPT NeoX の Pretraining サンプル](https://github.com/aws/amazon-sagemaker-examples/tree/main/training/distributed_training/pytorch/model_parallel/gpt-neox) を元に日本語対応および Fineーtuning、Instruction Tuning 対応などを追加しています。
+
+主な変更点は以下になります。
+
+- 日本語対応
+- Finetuning、Instruction Tuning ノートブックの追加
 - Padding Collator の実装
   - Pretraining であればテキストをチャンク化するためバッチ内でのトークン長が一致しているため問題にならないが Instruction Tuning の際には Instruction ごとにトークン長が異なるため Padding が必要になる。[Transformers の Collator](https://github.com/huggingface/transformers/blob/main/src/transformers/data/data_collator.py#L402) の実装を元にバッチに Left Padding を施す変更を加えた。元々トークン長が一致している Pretraining には影響しない。
-- その他、試行錯誤しやすいように細かな変更がいくつか
+- その他、試行錯誤しやすいように細かな変更をいくつか追加しています
 
 ## おすすめのリソース
 
