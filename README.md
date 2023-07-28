@@ -7,10 +7,9 @@
 - smp-train-jp-gpt-neox-sharded-data-parallel.ipynb
   - 日本語 GPT Neox の Pretraining
 - smp-finetune-jp-gpt-neox-sharded-data-parallel.ipynb
-  - OpenCALM 1B の Fine Tuning
-  - Domain Adaption Finetuning などの用途を想定している。
+  - 日本語 GPT Neox (Rinna 3.6B) の Fine Tuning
 - smp-instruct-jp-gpt-neox-sharded-data-parallel.ipynb
-  - OpenCALM 1B の Instruction Tuning
+  - 日本語 GPT Neox (Rinna 3.6B) の Pretraining の Instruction Tuning
 - smp-train-gpt-neox-sharded-data-parallel.ipynb
   - GPT NeoX の Pretraining（元のノートブックを少し改変したもの）
 - convert-hf.ipynb
