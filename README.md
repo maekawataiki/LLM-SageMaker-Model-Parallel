@@ -14,6 +14,8 @@
   - GPT NeoX の Pretraining（元のノートブックを少し改変したもの）
 - convert-hf.ipynb
   - 分散学習スクリプトで保存した Model を HuggingFace 形式に変換して保存するコード
+- data-preprocess.ipynb
+  - 事前学習用にデータセットを前処理して FSx for Lustre に保存するサンプルコード
 
 ## 元サンプルコードからの変更点
 
