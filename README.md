@@ -19,7 +19,7 @@
 
 ## 元サンプルコードからの変更点
 
-このサンプルノートブックは [SageMaker の分散学習での GPT NeoX の Pretraining サンプル](https://github.com/aws/amazon-sagemaker-examples/tree/main/training/distributed_training/pytorch/model_parallel/gpt-neox) を元に日本語対応および Fineーtuning、Instruction Tuning 対応などを追加しています。
+このサンプルノートブックは [SageMaker の分散学習での GPT NeoX の Pretraining サンプル](https://github.com/aws/amazon-sagemaker-examples/tree/main/training/distributed_training/pytorch/model_parallel/gpt-neox) を元に日本語対応および Fine-tuning、Instruction Tuning 対応などを追加しています。
 
 主な変更点は以下になります。
 
