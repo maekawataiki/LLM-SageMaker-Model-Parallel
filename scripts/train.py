@@ -391,7 +391,7 @@ def train(  # pylint: disable=too-many-arguments,too-many-branches,too-many-loca
 
             if smp.rank() == 0 and not total_steps % args.logging_freq:
                 if args.sharded_data_parallel_degree > 1:
-                    gradnorm_str = f", Grad norm: {optimizer._global_grad_norm}"
+                    gradnorm_str = "" # f", Grad norm: {optimizer._global_grad_norm}"
                 else:
                     gradnorm_str = ""
                 logging.info(
